@@ -1,42 +1,93 @@
 /* format for landing page*/
-.container1{
+.container1 {
     display: visible;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1fr 6fr .7fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 2fr;
     background-color: rgb(203, 181, 231);
     height: 100vh;
     width: 100vw;
-}
-
-.pic1{
+  }
+  
+  .pic1 {
     grid-column-start: 2;
     grid-row-start: 2;
     grid-column-end: 3;
-    grid-row-end:3;
+    grid-row-end: 3;
     width: 100%;
-    height:100%;
-}
-
-.title{
+    height: 100%;
+  }
+  
+  .title {
     grid-column-start: 2;
     text-align: center;
-
-}
-
-.startBtn{
+  }
+  
+  .startBtn {
     grid-column-start: 2;
     grid-row-start: 4;
     align-content: center;
-    width:10%;
+    width: 10%;
+    height: 90%;
     margin-left: 45%;
     background-color: rgb(248, 5, 240);
-
-}
-.subtitle{
-    grid-column-start:2;
+    margin-top: 0%;
+    border-radius: 6px;
+  }
+  .subtitle {
+    grid-column-start: 2;
     grid-row-start: 3;
     text-align: center;
     font-size: 2em;
+  }
+  /* formatting of the game board page */
+  .container3 {
+    display: grid;
+    grid-template-columns: 27% 46% 27%;
+    grid-template-rows: auto auto auto;
+    background-color: rgb(203, 181, 231);
+    height: 100vh;
+  }
+  .backBtn {
+    align-content: center;
+    width: 10%;
+    height: 100%;
+    background-color: rgb(248, 5, 240);
+    grid-column-start: 2;
     
-}
+    margin-left: 43%;
+    
+    border-radius: 6px;
+  }
+  
+  .gameBoard {
+    align-content: center;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 13em 13em 13em;
+    grid-template-rows: 13em 13em 13em;
+   
+    
+  }
+  
+  .box {
+    border: 2px solid black;
+  }
+  .icon {
+    font-size: 900%;
+    text-align: center;
+  }
+   .reset{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    background-color: rgb(248, 5, 228);
+    border-radius: 5px;
+    margin-left:2%;
+    
+   }
+   .gameOver{
+    background-color: rgb(248, 5, 228);
+    text-align: center;
+    font-size: 500%;
+   }
